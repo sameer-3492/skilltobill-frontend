@@ -1,0 +1,56 @@
+/* Terms & Conditions Page */
+/* terms.css - Premium clean styling for Terms & Conditions page */
+
+body {
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue';
+  background: #f3f7fb;
+  color: #0b1220;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Container */
+.terms-page .container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(15, 23, 42, 0.08);
+  padding: 40px 30px;
+}
+
+/* Page Headings */
+.terms-page h1 {
+  font-size: 32px;
+  color: #0b6ef6;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.terms-page h2 {
+  font-size: 20px;
+  color: #0b6ef6;
+  margin-top: 30px;
+  margin-bottom: 12px;
+}
+
+.terms-page p {
+  font-size: 15px;
+  color: #6b7280;
+  margin-bottom: 15px;
+}
+
+/* Responsive */
+@media(max-width: 768px) {
+  .terms-page .container {
+    padding: 30px 20px;
+  }
+  .terms-page h1 {
+    font-size: 26px;
+  }
+  .terms-page h2 {
+    font-size: 18px;
+  }
+}

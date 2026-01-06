@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SkillToBill - Login/Signup</title>
+<link rel="stylesheet" href="css/signup.css">
+</head>
+<body>
+<div class="container">
+    <div class="tabs">
+        <button id="loginTab" class="active">Login</button>
+        <button id="signupTab">Signup</button>
+    </div>
+
+    <!-- Login Form -->
+    <div id="loginFormContainer">
+        <form id="loginForm">
+            <input type="email" id="loginEmail" name="email" placeholder="Email" required>
+            <div class="password-field">
+                <input type="password" id="loginPassword" name="password" placeholder="Password" required>
+                <button type="button" class="toggle-password" data-target="loginPassword" aria-label="Show password">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#6c757d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8S1 12 1 12z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                </button>
+            </div>
+            <button type="submit">Login</button>
+            <p>Don't have an account? <span id="toSignup">Signup</span></p>
+        </form>
+    </div>
+
+    <!-- Signup Form -->
+    <div id="signupFormContainer" style="display:none;">
+        <form id="signupForm">
+            <input type="text" id="signupName" name="name" placeholder="Full Name" required>
+            <input type="email" id="signupEmail" name="email" placeholder="Email" required>
+            <input type="text" id="signupPhone" name="phone" placeholder="Phone" required>
+            <div class="password-field">
+                <input type="password" id="signupPassword" name="password" placeholder="Password" required>
+                <button type="button" class="toggle-password" data-target="signupPassword" aria-label="Show password">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#6c757d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8S1 12 1 12z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                </button>
+            </div>
+            <select id="signupRole" name="role" required>
+                <option value="">Select Role</option>
+                <option value="client">Client</option>
+                <option value="earner">Earner</option>
+            </select>
+            <select id="signupCategory" name="category" style="display:block;">
+                <option value="">Select Category</option>
+                <option value="AC Repairing">AC Repairing</option>
+                <option value="Plumbing">Plumbing</option>
+                <option value="Electrician">Electrician</option>
+                <option value="Painter">Painter</option>
+                <option value="Web Development">Web Development</option>
+                <option value="Graphic Design">Graphic Design</option>
+                <option value="Content Writing">Content Writing</option>
+                <option value="Digital Marketing">Digital Marketing</option>
+                <option value="House Cleaning">House Cleaning</option>
+                <option value="Cooking/Chef">Cooking/Chef</option>
+                <option value="Gardening">Gardening</option>
+                <option value="Tutoring">Tutoring</option>
+                <option value="Photography">Photography</option>
+                <option value="Videography">Videography</option>
+                <option value="Fashion Designer">Fashion Designer</option>
+                <option value="Car Repairing">Car Repairing</option>
+                <option value="Motorbike Repairing">Motorbike Repairing</option>
+                <option value="IT Support">IT Support</option>
+                <option value="Home Appliances Repair">Home Appliances Repair</option>
+            </select>
+            <button type="submit">Signup</button>
+            <p>Already have an account? <span id="toLogin">Login</span></p>
+        </form>
+    </div>
+</div>
+
+<script src="js/signup.js"></script>
+</body>
+</html>

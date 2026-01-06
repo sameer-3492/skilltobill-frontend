@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkillToBill — Blog</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/blog.css">
+  <link rel="stylesheet" href="css/components/navbar.css">
+  <link rel="stylesheet" href="css/components/footer.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div id="navbar"></div>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <img src="images/logo.png" alt="STB Logo" class="hero-logo">
+    <h1>SkillToBill Blog</h1>
+    <p>Insights, updates, and guides to grow your skills and earn smartly.</p>
+  </section>
+
+  <!-- Search & Blog Grid -->
+  <section class="blogs-section">
+    <div class="blog-filters">
+      <input type="text" id="searchInput" placeholder="Search blogs...">
+      <button id="searchBtn">Search</button>
+    </div>
+    <div id="blogContainer" class="blogs-grid">
+      <!-- JS will populate blogs here -->
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <div id="footer"></div>
+
+  <!-- JS -->
+  <script src="js/main.js"></script>
+  <script defer src="js/blog.js"></script>
+</body>
+</html>

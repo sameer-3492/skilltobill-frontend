@@ -1,0 +1,56 @@
+/* Service Card */
+.service-card, .blog-card, .learner-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+}
+
+.service-card:hover, .blog-card:hover, .learner-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+.service-card img, .blog-card img, .learner-card img {
+  width: 100%;
+  border-radius: 15px;
+}
+.service-card h3, .blog-card h3, .learner-card h3 { color: #0b6ef6; margin: 10px 0; }
+.service-card p, .blog-card p, .learner-card p { color: #6b7280; font-size: 14px; }
+
+/* Buttons */
+.btn-small {
+  padding: 8px 14px;
+  background: #0b6ef6;
+  color: #fff;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 700;
+  display: inline-block;
+  margin-top: 10px;
+}
+.btn-small:hover { background: #094bb5; }
+
+/* Price & Enroll */
+.price-enroll {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.price-enroll .price {
+  font-weight: bold;
+  color: #0b6ef6;
+  font-size: 16px;
+}
+.price-enroll button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 12px;
+  background: #0b6ef6;
+  color: #fff;
+  cursor: pointer;
+}
+.price-enroll button:hover { background: #094bb5; }

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SkillToBill - Learn, Grow, Earn</title>
+<meta name="description" content="SkillToBill: Community-first platform connecting freelancers and clients. Focus on skill growth with user-friendly interface and verified marketplace.">
+<meta name="keywords" content="freelancers, clients, skill development, marketplace, learning platform">
+<meta name="author" content="SkillToBill">
+<meta property="og:title" content="SkillToBill - Learn, Grow, Earn">
+<meta property="og:description" content="Join SkillToBill for skill development, freelancing, and client connections.">
+<meta property="og:image" content="images/hero-image.png">
+<meta property="og:url" content="https://skilltobill.com/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+<link rel="manifest" href="manifest.json">
+<link rel="canonical" href="https://skilltobill.com/">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/home.css">
+<link rel="stylesheet" href="css/components/navbar.css">
+<link rel="stylesheet" href="css/components/footer.css">
+<link rel="stylesheet" href="css/components/cards.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<div id="navbar"></div>
+  
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>Learn. Grow. Earn.</h1>
+    <p>Join SkillToBill and connect with top freelancers and clients. Build your skills and income through practical, proof-based learning.</p>
+    <a href="signup-login.html" class="btn-primary">Get Started</a>
+  </div>
+  <div class="hero-image">
+    <img src="images/hero-image.png" alt="SkillToBill learning platform hero image" loading="lazy">
+  </div>
+</section>
+
+<!-- USP Section -->
+<section class="usp">
+  <div class="container">
+    <h2>Why SkillToBill?</h2>
+    <div class="usp-points">
+      <div class="point">
+        <h3>Community-first approach</h3>
+        <p>Connects freelancers and clients</p>
+      </div>
+      <div class="point">
+        <h3>Skill-growth focus</h3>
+        <p>Ensures user development and learning</p>
+      </div>
+      <div class="point">
+        <h3>User-friendly interface</h3>
+        <p>Easy navigation, no technical hassle</p>
+      </div>
+      <div class="point">
+        <h3>Verified marketplace visibility</h3>
+        <p>Earners become instantly visible in their skill category</p>
+      </div>
+      <div class="point">
+        <h3>Secure, role-based access</h3>
+        <p>Protected features for Learners, Clients, and Admin</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Marketplace Section -->
+<section class="services">
+  <h2>Our Marketplace</h2>
+  <div class="services-container"></div>
+</section>
+
+<!-- Learner Zone Section -->
+<section class="learner-preview">
+  <h2>Learner Zone</h2>
+  <div class="learner-container"></div>
+</section>
+
+<!-- Blog Preview Section -->
+<section class="blog-preview">
+  <h2>Latest Blogs</h2>
+  <div class="blog-container"></div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="testimonials">
+  <h2>What Our Users Say</h2>
+  <div class="testimonials-container">
+    <div class="testimonial">
+      <p>"SkillToBill helped me start freelancing in just 2 months!"</p>
+      <cite>- Rahul, Graphic Designer</cite>
+    </div>
+    <div class="testimonial">
+      <p>"Amazing platform for learning and earning."</p>
+      <cite>- Priya, Web Developer</cite>
+    </div>
+    <div class="testimonial">
+      <p>"Verified marketplace made finding clients easy."</p>
+      <cite>- Amit, Electrician</cite>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<div id="footer"></div>
+
+<!-- Scripts -->
+<script src="js/main.js"></script>
+<script src="js/home.js"></script>
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/sw.js')
+      .then(reg => console.log('SW registered'))
+      .catch(err => console.log('SW registration failed'));
+  }
+</script>
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=GA_TRACKING_ID"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'GA_TRACKING_ID');
+</script>
+
+</body>
+</html>

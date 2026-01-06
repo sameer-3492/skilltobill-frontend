@@ -1,0 +1,16 @@
+{
+  "name": "SkillToBill",
+  "short_name": "STB",
+  "description": "Learn, Grow, Earn with SkillToBill",
+  "start_url": "/home.html",
+  "display": "standalone",
+  "background_color": "#0b6ef6",
+  "theme_color": "#0b6ef6",
+  "icons": [
+    {
+      "src": "images/favicon.ico",
+      "sizes": "192x192",
+      "type": "image/x-icon"
+    }
+  ]
+}

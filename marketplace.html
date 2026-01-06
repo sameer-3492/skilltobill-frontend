@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkillToBill Marketplace</title>
+  <link rel="stylesheet" href="css/marketplace.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div id="navbar"></div>
+
+<main>
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;">
+        <h1 style="margin:0;">Skill Marketplace</h1>
+        <input 
+            type="text" 
+            id="searchBar" 
+            placeholder="Search..."
+            style="padding:10px 14px;font-size:15px;border:1px solid #ccc;border-radius:8px;outline:none;width:220px;"
+        >
+    </div>
+
+    <h2 id="marketplaceHeading" style="margin:10px 0 20px 0; font-size:20px; font-weight:600;"></h2>
+    
+    <button id="backButton" style="display:none;">← Back</button>
+
+    <div id="marketplaceContainer" class="marketplace-container"></div>
+</main>
+
+<!-- Footer -->
+<div id="footer"></div>
+
+<script src="js/main.js"></script>
+<script src="js/marketplace.js"></script>
+</body>
+</html>

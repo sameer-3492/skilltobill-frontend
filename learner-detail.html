@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Course Detail</title>
+  <link rel="stylesheet" href="css/learner.css" />
+  <link rel="stylesheet" href="css/components/cards.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="back" href="learner-zone.html">← Back</a>
+    <h1 id="courseTitle">Course</h1>
+    <a class="nav-link" href="learner-dashboard.html">My Courses</a>
+  </header>
+
+  <main class="detail-wrap">
+    <div id="courseMeta" class="thumb-and-meta"></div>
+    <div class="actions">
+      <button id="enrollBtn">Enroll</button>
+      <span id="priceTag"></span>
+    </div>
+  </main>
+
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+  <script type="module" src="js/learner-detail.js"></script>
+</body>
+</html>
