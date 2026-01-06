@@ -1,0 +1,10 @@
+services:
+  - type: static
+    name: skilltobill-frontend
+    env: static
+    buildCommand: ""
+    publishPath: .
+    routes:
+      - path: /*
+        rewrite: /home.html
+    
