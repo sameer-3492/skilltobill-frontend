@@ -14,7 +14,7 @@ if(contactForm){
         }
 
         try {
-            const response = await fetch('http://localhost:3000/api/contact/contact', {
+            const response = await fetch('http://skilltobill-backend.onrender.com:3000/api/contact/contact', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

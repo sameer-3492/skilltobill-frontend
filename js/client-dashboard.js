@@ -2,7 +2,7 @@ const token = localStorage.getItem("token");
 if(!token) window.location.href="signup-login.html";
 
 async function fetchClientDashboard() {
-    const res = await fetch("http://localhost:5000/api/auth/me", {
+    const res = await fetch("http://skilltobill-backend.onrender.com:5000/api/auth/me", {
         headers: { "Authorization": `Bearer ${token}` }
     });
     const user = await res.json();
@@ -31,7 +31,7 @@ document.getElementById('profileImageInput').addEventListener('change', async (e
   formData.append('profileImage', file);
 
   try {
-    const res = await fetch('http://localhost:5000/api/auth/upload-profile-image', {
+    const res = await fetch('http://skilltobill-backend.onrender.com:5000/api/auth/upload-profile-image', {
       method: 'POST',
       headers: { 'Authorization': `Bearer ${token}` },
       body: formData

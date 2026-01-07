@@ -96,7 +96,7 @@ function setLoading(button, loading) {
 }
 
 // Backend URL
-const BASE_URL = 'http://localhost:5000/api/auth';
+const BASE_URL = 'http://skilltobill-backend.onrender.com:5000/api/auth';
 
 /* ===================== SIGNUP ===================== */
 document.getElementById('signupForm').addEventListener('submit', async (e) => {

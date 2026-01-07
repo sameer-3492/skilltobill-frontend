@@ -1,7 +1,7 @@
 // js/utils/api.js
 
 // ===== BACKEND BASE URL =====
-const BASE_URL = "http://localhost:5000";
+const BASE_URL = "https://skilltobill-backend.onrender.com:5000";
 
 // ================= AUTH APIs =================
 export async function registerUser(data) {

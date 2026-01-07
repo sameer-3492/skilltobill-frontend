@@ -5,7 +5,7 @@ const token = localStorage.getItem("token");
 if(!token) window.location.href="signup-login.html";
 
 async function loadCourseVideos() {
-    const res = await fetch(`http://localhost:5000/api/courses/${courseId}`, {
+    const res = await fetch(`http://skilltobill-backend.onrender.com:5000/api/courses/${courseId}`, {
         headers: { "Authorization": `Bearer ${token}` }
     });
     const course = await res.json();
