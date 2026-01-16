@@ -1,0 +1,106 @@
+[
+  {
+    "id": "1",
+    "title": "Basic Computer Course",
+    "price": 499,
+    "duration": "20 days",
+    "thumbnail": "images/learners/computer.png",
+    "description": "Learn essential computer fundamentals from zero.",
+    "modules": [
+      {
+        "moduleTitle": "Module 1: Introduction",
+        "lessons": [
+          { "title": "Course Overview", "url": "https://drive.google.com/uc?export=download&id=DRIVE_FILE_ID_1" },
+          { "title": "Computer Basics", "url": "https://drive.google.com/uc?export=download&id=DRIVE_FILE_ID_2" }
+        ]
+      },
+      {
+        "moduleTitle": "Module 2: Windows & Files",
+        "lessons": [
+          { "title": "Windows Basics", "url": "https://drive.google.com/uc?export=download&id=DRIVE_FILE_ID_3" },
+          { "title": "File Management", "url": "https://drive.google.com/uc?export=download&id=DRIVE_FILE_ID_4" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "title": "Mobile Graphic Design",
+    "price": 299,
+    "duration": "11 days",
+    "thumbnail": "images/learners/graphic-design.png",
+    "description": "Learn Canva, Pixellab and mobile editing tools.",
+    "modules": [
+      {
+        "moduleTitle": "Module 1: Tools",
+        "lessons": [
+          { "title": "Install & Setup", "url": "https://drive.google.com/uc?export=download&id=DRIVE_FILE_ID_5" },
+          { "title": "Basic Editing", "url": "https://drive.google.com/uc?export=download&id=DRIVE_FILE_ID_6" }
+        ]
+      },
+      {
+        "moduleTitle": "Module 2: Projects",
+        "lessons": [
+          { "title": "Social Post Project", "url": "https://drive.google.com/uc?export=download&id=DRIVE_FILE_ID_7" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "title": "AI Course",
+    "price": 399,
+    "duration": "14 days",
+    "thumbnail": "images/learners/ai.png",
+    "description": "Learn AI tools, automation and basic prompt engineering.",
+    "modules": [
+      {
+        "moduleTitle": "Module 1: Intro to AI",
+        "lessons": [
+          { "title": "What is AI?", "url": "https://drive.google.com/uc?export=download&id=DRIVE_FILE_ID_8" },
+          { "title": "Popular Tools", "url": "https://drive.google.com/uc?export=download&id=DRIVE_FILE_ID_9" }
+        ]
+      },
+      {
+        "moduleTitle": "Module 2: Practical",
+        "lessons": [
+          { "title": "Prompting Basics", "url": "https://drive.google.com/uc?export=download&id=DRIVE_FILE_ID_10" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "title": "Smartphone Skills",
+    "price": 299,
+    "duration": "7 days",
+    "thumbnail": "images/learners/smartphone.png",
+    "description": "Master smartphone productivity and tools.",
+    "modules": [
+      {
+        "moduleTitle": "Module 1: Basics",
+        "lessons": [
+          { "title": "Phone Setup", "url": "https://drive.google.com/uc?export=download&id=DRIVE_FILE_ID_11" },
+          { "title": "Useful Apps", "url": "https://drive.google.com/uc?export=download&id=DRIVE_FILE_ID_12" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "title": "Online Earning Starter",
+    "price": 499,
+    "duration": "15 days",
+    "thumbnail": "images/learners/earning.png",
+    "description": "Learn simple, practical ways to earn online.",
+    "modules": [
+      {
+        "moduleTitle": "Module 1: Fundamentals",
+        "lessons": [
+          { "title": "Intro to Online Earning", "url": "https://drive.google.com/uc?export=download&id=DRIVE_FILE_ID_13" },
+          { "title": "Platform Overview", "url": "https://drive.google.com/uc?export=download&id=DRIVE_FILE_ID_14" }
+        ]
+      }
+    ]
+  }
+]
