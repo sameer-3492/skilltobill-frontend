@@ -1,11 +1,9 @@
-// js/utils/api.js
-
 // ===== BACKEND BASE URL =====
-const API_BASE = "https://skilltobill-b.onrender.com/api";
+export const API_BASE = "https://skilltobill-b.onrender.com/api";
 
 // ================= AUTH APIs =================
 export async function registerUser(data) {
-  const res = await fetch(`${BASE_URL}/api/auth/register`, {
+  const res = await fetch(`${API_BASE}/auth/register`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(data)
@@ -20,7 +18,7 @@ export async function registerUser(data) {
 }
 
 export async function loginUser(data) {
-  const res = await fetch(`${BASE_URL}/api/auth/login`, {
+  const res = await fetch(`${API_BASE}/auth/login`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(data)
@@ -35,7 +33,6 @@ export async function loginUser(data) {
 }
 
 // ================= STATIC DATA (JSON) =================
-// 🔥 THIS IS THE KEY FIX FOR LEARNER ZONE
 export async function getData(path) {
   const res = await fetch(path);
 
