@@ -2,12 +2,12 @@ const token = localStorage.getItem("token");
 if(!token) window.location.href="signup-login.html";
 
 async function fetchClientDashboard() {
-    const res = await fetch("http://localhost:5000/api/auth/me", {
+    const res = await fetch("https://skilltobill-b.onrender.com/api/auth/me", {
         headers: { "Authorization": `Bearer ${token}` }
     });
     const user = await res.json();
     document.getElementById("welcomeName").innerText = `Welcome, ${user.name}`;
-    document.getElementById("profilePic").src = user.profileImage || "assetes/images/default.png";
+    document.getElementById("profilePic").src = user.profileImage || "assets/images/default.png";
     document.getElementById("totalPayments").innerText = `$${user.totalPayments || 0}`;
     document.getElementById("completedJobs").innerText = user.completedJobs || 0;
     document.getElementById("activeJobs").innerText = user.activeJobs || 0;
@@ -31,7 +31,7 @@ document.getElementById('profileImageInput').addEventListener('change', async (e
   formData.append('profileImage', file);
 
   try {
-    const res = await fetch('http://localhost:5000/api/auth/upload-profile-image', {
+    const res = await fetch('https://skilltobill-b.onrender.com/api/auth/upload-profile-image', {
       method: 'POST',
       headers: { 'Authorization': `Bearer ${token}` },
       body: formData

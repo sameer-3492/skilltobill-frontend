@@ -54,7 +54,7 @@ function safe(s){ return String(s||''); }
       if(!token) return alert('Please login first.');
 
       try {
-        const res = await fetch('http://localhost:5000/api/orders/course', {
+        const res = await fetch('https://skilltobill-b.onrender.com/api/orders/course', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -74,7 +74,7 @@ function safe(s){ return String(s||''); }
           description: `Enroll in ${course.title}`,
           handler: async function (response) {
             // Verify payment
-            const verifyRes = await fetch('http://localhost:5000/api/orders/verify', {
+            const verifyRes = await fetch('https://skilltobill-b.onrender.com/api/orders/verify', {
               method: 'POST',
               headers: {
                 'Content-Type': 'application/json',
