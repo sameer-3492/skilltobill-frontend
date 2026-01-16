@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Profile - SkillToBill</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/profile-professional.css">
+<link rel="stylesheet" href="css/components/navbar.css">
+<link rel="stylesheet" href="css/components/footer.css">
+</head>
+<body>
+
+<div id="navbar"></div>
+
+<!-- Professional Profile Header -->
+<section class="profile-header">
+  <div class="header-container">
+    <div class="profile-main">
+      <div class="profile-avatar-section">
+        <div class="avatar-container">
+          <img id="profilePic" src="" alt="Profile Picture">
+          <div class="avatar-overlay">
+            <button class="edit-avatar-btn" id="editAvatarBtn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/>
+                <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/>
+              </svg>
+            </button>
+          </div>
+          <input type="file" id="profileImageInput" accept="image/*" style="display: none;">
+        </div>
+      </div>
+      <div class="profile-info">
+        <h1 id="nameText" class="profile-name"></h1>
+        <p id="bioText" class="profile-title"></p>
+        <div class="profile-details">
+          <div class="detail-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+            <span id="locationText">Location not specified</span>
+          </div>
+          <div class="detail-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+              <line x1="16" y1="2" x2="16" y2="6"/>
+              <line x1="8" y1="2" x2="8" y2="6"/>
+              <line x1="3" y1="10" x2="21" y2="10"/>
+            </svg>
+            <span>Member since 2024</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="profile-actions">
+      <button class="btn-primary" id="editBtn">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/>
+          <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/>
+        </svg>
+        Edit Profile
+      </button>
+      <button class="btn-secondary" id="shareBtn">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="18" cy="5" r="3"/>
+          <circle cx="6" cy="12" r="3"/>
+          <circle cx="18" cy="19" r="3"/>
+          <path d="M8.59 13.51l6.83 3.98"/>
+          <path d="M15.41 6.51l-6.82 3.98"/>
+        </svg>
+        Share Profile
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- Dashboard Section -->
+<section class="dashboard-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Dashboard</h2>
+      <p>Your activity overview</p>
+    </div>
+    <div class="dashboard-content">
+      <div class="notifications">
+        <h3>Notifications</h3>
+        <div id="notificationsList">Loading notifications...</div>
+      </div>
+      <div class="enrolled-courses" id="coursesSection" style="display: none;">
+        <h3>Your Courses</h3>
+        <div id="coursesList">Loading your courses...</div>
+      </div>
+      <div class="client-dashboard" id="clientSection" style="display: none;">
+        <h3>Client Dashboard</h3>
+        <p>Static client tasks and info coming in Phase-2.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Skills Section -->
+<section class="skills-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Skills</h2>
+      <p>My technical skills and expertise</p>
+    </div>
+    <div class="skills-container" id="skillsContainer">
+      <!-- Skills will be populated here -->
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Learning Progress - Seekho App Concept -->
+<section class="learning-progress-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Learning Journey</h2>
+      <p>Your path from skill to income</p>
+    </div>
+    <div class="learning-path">
+      <div class="path-step active" id="step1">
+        <div class="step-icon">🎯</div>
+        <h4>Choose Skill</h4>
+        <p>Market demand based skills</p>
+        <div class="step-status">Completed</div>
+      </div>
+      <div class="path-connector active"></div>
+      <div class="path-step" id="step2">
+        <div class="step-icon">📚</div>
+        <h4>Learn & Practice</h4>
+        <p>Daily tasks → portfolio</p>
+        <div class="step-status">In Progress</div>
+      </div>
+      <div class="path-connector"></div>
+      <div class="path-step" id="step3">
+        <div class="step-icon">✅</div>
+        <h4>Proof of Work</h4>
+        <p>Build verifiable portfolio</p>
+        <div class="step-status">Pending</div>
+      </div>
+      <div class="path-connector"></div>
+      <div class="path-step" id="step4">
+        <div class="step-icon">💰</div>
+        <h4>Earn Income</h4>
+        <p>Convert skills to earnings</p>
+        <div class="step-status">Pending</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Skill Verification Badges - UC Feature -->
+<section class="verification-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Skill Verification</h2>
+      <p>Prove your expertise with verified badges</p>
+    </div>
+    <div class="badges-grid" id="badgesContainer">
+      <!-- Badges will be populated here -->
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Profile Completion - Unique Feature -->
+<section class="completion-section">
+  <div class="container">
+    <div class="completion-card">
+      <div class="completion-header">
+        <h3>Profile Strength</h3>
+        <span class="completion-percentage" id="completionPercent">0%</span>
+      </div>
+      <div class="completion-bar">
+        <div class="completion-fill" id="completionFill"></div>
+      </div>
+      <div class="completion-tips">
+        <p id="completionTip">Complete your profile to stand out!</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Professional Stats -->
+<section class="stats-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Stats</h2>
+      <p>Your performance overview</p>
+    </div>
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-icon">💰</div>
+        <div class="stat-content">
+          <h3 id="earningsText">₹0</h3>
+          <p>Total Earnings</p>
+        </div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon">👥</div>
+        <div class="stat-content">
+          <h3 id="clientsText">0</h3>
+          <p>Clients Served</p>
+        </div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon">📋</div>
+        <div class="stat-content">
+          <h3 id="projectsText">0</h3>
+          <p>Projects Done</p>
+        </div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon">⭐</div>
+        <div class="stat-content">
+          <h3 id="ratingText">0.0</h3>
+          <p>Average Rating</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Professional Edit Modal -->
+<div class="modal-overlay hidden" id="editModal">
+  <div class="modal-container">
+    <div class="modal-header">
+      <h3>Edit Profile Information</h3>
+      <button class="modal-close" id="modalClose">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"/>
+          <line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+    </div>
+    <form id="editForm" class="modal-form">
+      <div class="form-section">
+        <h4>Personal Information</h4>
+        <div class="form-group">
+          <label for="nameInput">Full Name</label>
+          <input id="nameInput" name="name" type="text" placeholder="Enter your full name">
+        </div>
+        <div class="form-group">
+          <label for="bioInput">Professional Summary</label>
+          <textarea id="bioInput" name="bio" rows="3" placeholder="Brief description of your expertise and experience"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="locationInput">Location</label>
+          <input id="locationInput" name="location" type="text" placeholder="City, Country">
+        </div>
+      </div>
+      <div class="form-section">
+        <h4>Professional Skills</h4>
+        <div class="form-group">
+          <label for="skillsInput">Skills (comma separated)</label>
+          <input id="skillsInput" name="skills" type="text" placeholder="e.g., JavaScript, React, Node.js, Python, UI/UX Design">
+        </div>
+        <div class="form-group">
+          <label for="categoryInput">Primary Expertise</label>
+          <select id="categoryInput" name="category">
+            <option value="">Select your main area of expertise</option>
+            <option value="Web Development">Web Development</option>
+            <option value="Mobile Development">Mobile Development</option>
+            <option value="Full Stack Development">Full Stack Development</option>
+            <option value="UI/UX Design">UI/UX Design</option>
+            <option value="Graphic Design">Graphic Design</option>
+            <option value="Data Science">Data Science</option>
+            <option value="DevOps">DevOps</option>
+            <option value="Digital Marketing">Digital Marketing</option>
+            <option value="Content Writing">Content Writing</option>
+          </select>
+        </div>
+      </div>
+      <div class="modal-actions">
+        <button type="button" id="cancelBtn" class="btn-secondary">Cancel</button>
+        <button type="submit" class="btn-primary">Save Changes</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<div id="footer"></div>
+
+<script src="js/main.js"></script>
+<script src="js/profile.js"></script>
+</body>
+</html>

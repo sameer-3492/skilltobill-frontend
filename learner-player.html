@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Course Player</title>
+  <link rel="stylesheet" href="css/learner.css" />
+  <link rel="stylesheet" href="css/components/cards.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="back" href="learner-dashboard.html">← My Courses</a>
+    <h1 id="playerCourseTitle">Player</h1>
+  </header>
+
+  <nav class="breadcrumb">
+    <a href="home.html">Home</a> &gt;
+    <a href="learner-dashboard.html">My Courses</a> &gt;
+    <span id="breadcrumbCourse">Course</span>
+  </nav>
+
+  <main class="player-wrap">
+    <aside class="player-sidebar" id="playerModules"></aside>
+
+    <section class="player-main">
+      <div class="video-holder">
+        <div id="videoContainer" style="background:#000;">
+          <video id="courseVideo" controls style="width:100%;max-height:520px;display:none;"></video>
+          <iframe id="courseIframe" width="100%" height="360" frameborder="0" allowfullscreen style="display:none;"></iframe>
+        </div>
+      </div>
+
+      <div class="player-controls">
+        <button id="prevBtn">Prev</button>
+        <button id="completeBtn">Mark Complete</button>
+        <button id="nextBtn">Next</button>
+      </div>
+
+      <div class="progress-line">Progress: <span id="progressPct">0%</span></div>
+    </section>
+  </main>
+
+  <script type="module" src="js/learner-player.js"></script>
+</body>
+</html>

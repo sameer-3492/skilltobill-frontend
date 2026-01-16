@@ -1,0 +1,15 @@
+{
+  "name": "stb-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static frontend for STB",
+  "scripts": {
+    "start": "npx serve -s . -l 3000",
+    "dev": "npx live-server --port=3000",
+    "build": "echo \"No build step for static frontend\"",
+    "test": "echo \"No tests configured\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT"
+}

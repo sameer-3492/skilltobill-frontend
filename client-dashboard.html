@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Client Dashboard</title>
+<link rel="stylesheet" href="css/earner-dashboard.css">
+</head>
+<body>
+<header>
+    <div class="profile-section">
+        <img id="profilePic" src="assetes/images/default.png" class="profile-img">
+        <input type="file" id="profileImageInput" accept="image/*" style="display: block; margin-top: 10px;">
+        <h1 id="welcomeName">Welcome</h1>
+    </div>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="profile.html">Profile</a>
+        <a href="signup-login.html">Logout</a>
+    </nav>
+</header>
+
+<main>
+    <section class="stats">
+        <div class="card"><h3>Total Payments</h3><p id="totalPayments">$0</p></div>
+        <div class="card"><h3>Completed Jobs</h3><p id="completedJobs">0</p></div>
+        <div class="card"><h3>Active Jobs</h3><p id="activeJobs">0</p></div>
+    </section>
+
+    <section class="recent-jobs">
+        <h2>Posted Jobs</h2>
+        <table>
+            <thead>
+                <tr><th>Job</th><th>Earner</th><th>Status</th></tr>
+            </thead>
+            <tbody id="jobsTable"></tbody>
+        </table>
+    </section>
+</main>
+<script src="js/client-dashboard.js"></script>
+</body>
+</html>

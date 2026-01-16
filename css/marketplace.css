@@ -1,0 +1,115 @@
+/* ==========================
+   SkillToBill Marketplace CSS
+========================== */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f7f7f7;
+}
+
+main {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #0b6ef6;
+}
+
+#marketplaceHeading {
+  text-align: center;
+  margin: 10px 0 20px 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: #0b6ef6;
+}
+
+#backButton {
+  margin-bottom: 20px;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  background: #0b6ef6;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+#backButton:hover {
+  background: #094bb5;
+}
+
+.marketplace-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Cards */
+.category-card, .subcategory-card, .earner-card {
+  width: 180px;
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: center;
+  cursor: pointer;
+  background: #fff;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.category-card:hover, .subcategory-card:hover, .earner-card:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 12px 35px rgba(0,0,0,0.2);
+}
+
+.category-card img, .subcategory-card img, .earner-card img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-bottom: 1px solid #eee;
+}
+
+.category-card h4, .subcategory-card h4, .earner-card h4 {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #0b6ef6;
+}
+
+.earner-card p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .marketplace-container {
+    gap: 15px;
+  }
+
+  .category-card, .subcategory-card, .earner-card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .category-card, .subcategory-card, .earner-card {
+    width: 100%;
+  }
+
+  #searchBar {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  #backButton {
+    width: 100%;
+  }
+}
