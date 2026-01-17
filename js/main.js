@@ -1,5 +1,3 @@
-javascript
-// filepath: c:\Users\HP\Desktop\stb\skilltobill469\STB\STB-Frontend\js\main.js
 /* ==========================
    main.js — SkillToBill
 ========================== */
