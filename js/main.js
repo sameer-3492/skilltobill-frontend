@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // ----------------------
   // LOAD NAVBAR
   // ----------------------
-  fetch("/navbar.html")
+  fetch("navbar.html")
     .then(res => {
       if (!res.ok) throw new Error("Navbar not found");
       return res.text();
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // ----------------------
   // LOAD FOOTER
   // ----------------------
-  fetch("/footer.html")
+  fetch("footer.html")
     .then(res => {
       if (!res.ok) throw new Error("Footer not found");
       return res.text();
