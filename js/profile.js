@@ -2,7 +2,7 @@
 const token = localStorage.getItem("token");
 if (!token) window.location.href = "signup-login.html";
 
-const API_BASE = "https://skilltobill-b.onrender.com/api";
+const API_BASE = "http://localhost:5000/api";
 
 // Load dashboard content based on role
 async function loadDashboard(role) {
@@ -86,7 +86,7 @@ async function loadProfile() {
     document.getElementById("nameText").innerText = user.name || "Anonymous User";
     document.getElementById("bioText").innerText = user.bio || "No bio available";
     document.getElementById("locationText").innerText = user.location || "Location not set";
-    document.getElementById("profilePic").src = user.profileImage || "assets/images/default.png";
+    document.getElementById("profilePic").src = user.profileImage || "assetes/images/default.png";
 
     // Load dashboard content based on role
 async function loadDashboard(role) {

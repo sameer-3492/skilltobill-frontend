@@ -8,31 +8,23 @@ document.addEventListener("DOMContentLoaded", () => {
   // LOAD NAVBAR
   // ----------------------
   fetch("navbar.html")
-    .then(res => {
-      if (!res.ok) throw new Error("Navbar not found");
-      return res.text();
-    })
+    .then(res => res.text())
     .then(data => {
       const navbarDiv = document.getElementById("navbar");
-      if (navbarDiv) navbarDiv.innerHTML = data;
+      if(navbarDiv) navbarDiv.innerHTML = data;
       initNavbarScripts();
       setActiveNavLink();
-    })
-    .catch(err => console.error(err));
+    });
 
   // ----------------------
   // LOAD FOOTER
   // ----------------------
   fetch("footer.html")
-    .then(res => {
-      if (!res.ok) throw new Error("Footer not found");
-      return res.text();
-    })
+    .then(res => res.text())
     .then(data => {
       const footerDiv = document.getElementById("footer");
-      if (footerDiv) footerDiv.innerHTML = data;
-    })
-    .catch(err => console.error(err));
+      if(footerDiv) footerDiv.innerHTML = data;
+    });
 
 });
 
