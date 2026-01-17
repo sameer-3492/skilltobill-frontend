@@ -1,3 +1,5 @@
+javascript
+// filepath: c:\Users\HP\Desktop\stb\skilltobill469\STB\STB-Frontend\js\main.js
 /* ==========================
    main.js — SkillToBill
 ========================== */
@@ -7,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // ----------------------
   // LOAD NAVBAR
   // ----------------------
-  fetch("navbar.html")
+  fetch("components/navbar.html")
     .then(res => {
       if (!res.ok) throw new Error("Navbar not found");
       return res.text();
@@ -23,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // ----------------------
   // LOAD FOOTER
   // ----------------------
-  fetch("footer.html")
+  fetch("components/footer.html")
     .then(res => {
       if (!res.ok) throw new Error("Footer not found");
       return res.text();
